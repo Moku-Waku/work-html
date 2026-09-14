@@ -47,12 +47,26 @@ body{
     list-style: none;
     gap: 40px;
 }
+/* 导航栏链接 */
 .nav_link a{
     padding: 0 15px;
     color: white;
     text-decoration: none;
     font-size: 35px;
 }
+.nav_link a.active{
+    color: aqua;
+}
+/* 第二行 */
+/* 页面主体内容，避免被固定导航栏遮挡 */
+.main-content {
+    font-family: "ZLabRoundPix";
+    padding-top: 84px; /* 大于导航栏高度 64px，留出呼吸空间 */
+    text-align: center; /* 让内容居中 */
+    color: white; /* 因为背景图偏暗，白色文字更容易看清 */
+}
+
+
 /* 手机端 */
 @media screen and (max-width:768px) {
     .bg-img{
