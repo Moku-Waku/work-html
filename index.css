@@ -13,11 +13,17 @@
 /* 背景 */
 body{
     min-height: 100vh;
-    background-image: url("img/reisa.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+}
+/* 背景图片 */
+.bg-img {
+    position: fixed;        /* 固定在屏幕上，不随滚动条移动 */
+    top: 0;
+    left: 0;
+    width: 100vw;           /* 宽度铺满整个屏幕 */
+    height: 100vh;          /* 高度铺满整个屏幕 */
+    object-fit: cover;      /* 保持比例填满屏幕，超出部分裁切 */
+    object-position: center center; /* 默认从中间显示 */
+    z-index: -1;            /* 放到所有内容的后面 */
 }
 /* 导航栏 */
 .nav_bar{
@@ -49,9 +55,8 @@ body{
 }
 /* 手机端 */
 @media screen and (max-width:768px) {
-    body{
-        background-attachment: scroll;
-        background-position: center top;/*背景图片*/
+    .bg-img{
+        object-position: 20% center;
     }
     .nav_bar {
         padding: 0 15px; /* 减小左右内边距 */
