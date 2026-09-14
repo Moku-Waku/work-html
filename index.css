@@ -5,12 +5,13 @@
 }
 @font-face {
     font-family: "ZLabRoundPix";
-    src: url(../front/ZLabsRoundPix_12px_M_CN.ttf)format("truetype");
+    src: url("front/ZLabsRoundPix_12px_M_CN.ttf") format("truetype");
     font-weight: 400;
     font-display: swap;
 }
 body{
-    background-image: url(../img/reisa.jpg);
+    min-height: 100vh;
+    background-image: url("img/reisa.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
