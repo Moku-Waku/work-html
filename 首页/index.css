@@ -3,12 +3,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url(../img/reisa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .nav_bar{
-    height: auto;
-    width: auto;
-    background-color: blueviolet;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    background:rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 100;
 }
 .nav_link{
     display: flex;
     list-style: none;
+    gap: 40px;
+}
+.nav_link a{
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
 }
