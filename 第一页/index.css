@@ -8,3 +8,6 @@
     width: auto;
     background-color: blueviolet;
 }
+.nav_link{
+    display: flex;
+}
