@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "ZLabRoundPix";
+    src: url(../front/ZLabsRoundPix_12px_M_CN.ttf)format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
 body{
     background-image: url(../img/reisa.jpg);
     background-size: cover;
@@ -11,6 +17,7 @@ body{
     background-attachment: fixed;
 }
 .nav_bar{
+    font-family: "ZLabRoundPix";
     position: fixed;
     top: 0;
     left: 0;
