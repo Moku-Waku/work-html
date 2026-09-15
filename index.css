@@ -3,11 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*字体*/
+/*中等字体*/
 @font-face {
     font-family: "ZLabRoundPix";
     src: url("front/ZLabsRoundPix_12px_M_CN.ttf") format("truetype");
     font-weight: 400;
+    font-display: swap;
+}
+/* 小字体 */
+@font-face {
+    font-family: "ZLabRoundPix_12px_MS_CN";
+    src: url("front/ZLabsRoundPix_12px_MS_CN.ttf") format("truetype");
+    font-weight: 200;
     font-display: swap;
 }
 /* 背景 */
@@ -28,9 +35,7 @@ body{
 /* 导航栏 */
 .nav_bar{
     font-family: "ZLabRoundPix";
-    position: fixed;
-    top: 0;
-    left: 0;
+
     height: 64px;
     width: 100%;
     display: flex;
@@ -57,13 +62,37 @@ body{
 .nav_link a.active{
     color: aqua;
 }
-/* 第二行 */
-/* 页面主体内容，避免被固定导航栏遮挡 */
-.main-content {
+.com_song{
     font-family: "ZLabRoundPix";
-    padding-top: 84px; /* 大于导航栏高度 64px，留出呼吸空间 */
-    text-align: center; /* 让内容居中 */
-    color: white; /* 因为背景图偏暗，白色文字更容易看清 */
+    margin-top: 20px;    /* 顶部留出导航栏高度 */
+    display: flex;
+    gap: 20px;
+    color: white;
+    background:rgba(255, 255, 255, 0.188);/*透明样式*/
+    backdrop-filter: blur(10px);/*透明样式*/
+    -webkit-backdrop-filter: blur(10px);/*透明样式*/
+    width: 80%;          /* 宽度占屏幕 80% */
+    margin-left: auto;   /* 左边自动 */
+    margin-right: auto;  /* 右边自动 */
+    padding: 20px;       /* 内边距 */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* 歌曲专辑图片 */
+.alb_img{
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;  /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+/* 歌手名称设置 */
+.singer{
+    font-family: "ZLabRoundPix_12px_MS_CN" ;
+    font-weight: 200;
+    font-size: 10px;
 }
 
 
