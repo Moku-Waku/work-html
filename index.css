@@ -107,7 +107,7 @@ body{
     }
     
     .nav_link {
-        gap: 12px;       /* 减小菜单项之间的间距 */
+        gap: 8px;       /* 减小菜单项之间的间距 */
     }
     
     .nav_link a {
