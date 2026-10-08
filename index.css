@@ -60,7 +60,7 @@ body{
     font-size: 35px;
 }
 .nav_link a.active{
-    color: aqua;
+    color: rgb(146,200,224);
 }
 .com_song{
     font-family: "ZLabRoundPix";
