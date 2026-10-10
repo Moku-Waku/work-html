@@ -8,7 +8,15 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "japen-cute";
+  src: url("../../front/ZenMaruGothic-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 /* 主题 */
 @theme{
     --font-japen-bit:"japen-bit", sans-serif;
+    --font-japen-cute:"japen-cute", sans-serif;
 }
