@@ -4,51 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>音乐播放页</title>
-    <link href="index.css" type="text/css" rel="stylesheet">
+    <link href="tailwind_package/src/output.css" rel="stylesheet">
 
 </head>
 <body>
-    <img src="img/Touhou-.webp" alt="背景" class="bg-img" fetchpriority="high" decoding="async">
-    <div class="nav_bar">
-        <ul class="nav_link">
-            <li><a href="index.html">开始</a></li>
-            <li><a href="Playlist_page/songlist.html">歌单</a></li>
-            <li><a href="#">我的喜欢</a></li>
+    <!-- 背景图 -->
+    <div class="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat" 
+style="background-image: url('img/Touhou-.webp');"></div>
+    <!-- 导航栏 -->
+    <div class="w-full max-w-full h-12 rounded-b-lg opacity-75 bg-[#dbe8f675] font-japen-bit">
+        <ul class="flex w-full gap-6 list-none justify-center text-3xl">
+            <li><a href="index.html"class="text-white hover:text-blue-300 transition">开始</a></li>
+            <li><a href="Playlist_page/songlist.html"class="text-white hover:text-blue-300 transition">歌单</a></li>
+            <li><a href="#"class="text-white hover:text-blue-300 transition">我的喜欢</a></li>
         </ul>
     </div>
-    <!-- 推荐歌曲 -->
-     <div class="com_song">
-        <div class="alb_img">
-            <img src="Album_Cover/63／64 Completion.jpg"width="128px"height="128px" alt="专辑图片">
-            <p class="singer">ジャージと愉快な仲間たち</p>
-            <p>Fiesta de la Luna ～魔法少女達の百年祭</p>
-        </div>
-        <div class="alb_img">
-            <img src="Album_Cover/63／64 Completion.jpg"width="128px"height="128px" alt="专辑图片">
-            <p class="singer">ジャージと愉快な仲間たち</p>
-            <p>La Hakureina ～博麗神社の花祭り</p>
-        </div>
-        <div class="alb_img">
-            <img src="Album_Cover/63／64 Completion.jpg"width="128px"height="128px" alt="专辑图片">
-            <p class="singer">ジャージと愉快な仲間たち</p>
-            <p>Primavera ～春</p>
-        </div>
-        <div class="alb_img">
-            <img src="Album_Cover/63／64 Completion.jpg"width="128px"height="128px" alt="专辑图片">
-            <p class="singer">ジャージと愉快な仲間たち</p>
-            <p>Adios, Illusion de los Companeros ～さよなら友の幻よ</p>
-        </div>
-        <div class="alb_img">
-            <img src="Album_Cover/Tierra- Piedra-Cielo-y-Hombre土と石と空と人.jpg"width="128px"height="128px" alt="专辑图片">
-            <p class="singer">ジャージと愉快な仲間たち</p>
-            <p>アンデス春秋</p>
-        </div>
-     </div>
-     <!-- 底边栏 -->
-      <div class="player-bar" id="player-bar">
-        <div class="play-info">
-            
-        </div>
-      </div>
 </body>
 </html>

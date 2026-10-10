@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>歌单页面</title>
-    <link href="../index.css" type="text/css" rel="stylesheet">
-    <link href="songlist.css" type="text/css" rel="stylesheet">
+    <link href="../tailwind_package/src/output.css" rel="stylesheet">
 </head>
 <body>
-    <img src="../img/Touhou.webp" alt="背景" class="bg-img" fetchpriority="high" decoding="async">
-    <div class="nav_bar">
-        <ul class="nav_link">
-            <li><a href="../index.html">开始</a></li>
-            <li><a href="songlist.html" class="active">歌单</a></li>
-            <li><a href="#">我的喜欢</a></li>
+    <!-- 背景图 -->
+    <div class="fixed inset-0 -z-10 bg-cover bg-center bg-no-repeat" 
+style="background-image: url('../img/Touhou.webp');"></div>
+    <!-- 导航栏 -->
+    <div class="w-full max-w-full h-12 rounded-b-lg opacity-75 bg-[#dbe8f675] font-japen-bit">
+        <ul class="flex gap-6 list-none justify-center text-3xl">
+            <li><a href="index.html"class="text-white hover:text-blue-300 transition">开始</a></li>
+            <li><a href="Playlist_page/songlist.html"class="text-white hover:text-blue-300 transition">歌单</a></li>
+            <li><a href="#"class="text-white hover:text-blue-300 transition">我的喜欢</a></li>
         </ul>
-    </div>
-    <div class="main-content">
-        
     </div>
 </body>
 </html>

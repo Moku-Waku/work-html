@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@source "../../**/*.html";
+/* 字体 */
+@font-face {
+  font-family: "japen-bit";
+  src: url("../../front/ZLabsRoundPix_12px_M_CN.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* 主题 */
+@theme{
+    --font-japen-bit:"japen-bit", sans-serif;
+}
